@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var fn =function (data) {
+		console.log(data)
+	} 
+var url="http://localhost:8000/remote?callback=fn";
+var script=document.createElement("script");
+script.setAttribute('src',url);
+document.body.appendChild(script);
+
+	</script>
+</body>
+</html>
